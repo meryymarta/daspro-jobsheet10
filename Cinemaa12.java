@@ -11,7 +11,7 @@ public class Cinemaa12 {
         audience[2][1] = "Farhan";
         audience[3][0] = "Gisel";
         audience[3][1] = "Hana";
-
+ 
         System.out.println(audience.length);
         System.out.println(audience[0].length);
         System.out.println(audience[1].length);
