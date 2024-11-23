@@ -12,9 +12,9 @@ public class Cinemaa12 {
         audience[3][0] = "Gisel";
         audience[3][1] = "Hana";
 
-        System.out.println("Audience in the row 3: ");
-        for(String i :  audience[2]){
-            System.out.println(i);
+       
+        for(int i = 0; i < audience.length; i++){
+            System.out.println("Audience in the row: "  + (i + 1) +  String.join (", ", audience[i]));
         }
     }
 }
