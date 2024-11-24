@@ -30,7 +30,7 @@ public class AssignmentSurveyCompany12 {
                     System.out.println();
                 }
             
-            // Average Per Respondent
+            // calculate Average Per Respondent
             System.out.println("Average for each respondent");
                 for(int i = 0; i < 10; i++) {
                     double sum = 0;
@@ -43,7 +43,7 @@ public class AssignmentSurveyCompany12 {
 
                     }
                    
-                   // Average Per Question
+                   // calculate Average Per Question
                     System.out.println("Average for each question:");
                     for(int j = 0; j < 6; j++) {
                         double sum = 0;
@@ -54,7 +54,7 @@ public class AssignmentSurveyCompany12 {
                         System.out.printf("Question %d: %.2f%n", (j + 1), average);
                     }
                    
-                   //Overall Average
+                   // calculate Overall Average
                     double totalSum = 0;
                     for(int i = 0; i < 10; i++) {
                         for(int j = 0; j < 6; j++) {
