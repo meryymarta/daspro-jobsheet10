@@ -47,7 +47,7 @@ public class CinemaaWithScanner12 {
         System.out.println("Seating arrangement:");
         for(int i = 0; i < audience.length; i++) {
           for(int j = 0; j < audience[i].length; j++) {
-            System.out.print((audience[i][j] == null ? "empty" : audience[i][j]) + "\t");
+            System.out.print((audience[i][j] == null? "***" : audience[i][j]) + "\t");
           }
           System.out.println();
         }
