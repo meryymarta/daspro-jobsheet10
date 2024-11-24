@@ -22,11 +22,21 @@ public class CinemaWithScanner12 {
             while (true) {
             System.out.print("Enter a name: ");
             name = input12.nextLine();
-            System.out.print("Enter row number: ");
+
+            System.out.print("Enter row number (1-4): ");
             row = input12.nextInt();
-            System.out.print("Enter column number: ");
+            if (row < 1 || row > 4 ){
+            
+            System.out.println("row number not availabe. enter number between 1 - 4 "); 
+            break; 
+        }
+            System.out.print("Enter column number(1-2): ");
             column = input12.nextInt();
-            input12.nextLine();
+            if (column < 1 || column > 2) {
+                System.out.println("column number not available. enter number between 1 - 2" );
+                break;  
+            }
+            
             audience[row - 1][column - 1] = name;
             System.out.print("Are there any other audience to be added? (y/n): ");
             next = input12.nextLine();
