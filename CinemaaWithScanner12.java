@@ -30,8 +30,10 @@ public class CinemaaWithScanner12 {
 
         if (row < 1 || row > 4 || column < 1 || column > 2) {
           System.out.println("The seat is not available");
+        } else if (audience[row-1] [column-1] != null) {
+          System.out.println("The seat is already occupied. chose another seat");
+        } else {
         }
-
         audience[row - 1][column - 1] = name;
         System.out.print("Are there any other audiences to be added? (y/n): ");
         next = input12.nextLine();
