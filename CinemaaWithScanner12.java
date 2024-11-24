@@ -9,7 +9,7 @@ public class CinemaaWithScanner12 {
       String[][] audience = new String[4][2];
       Scanner input12 = new Scanner(System.in);
 
-      while (true) {
+        while (true) {
         System.out.println("CINEMA MENU");
         System.out.println("Menu 1: Input audience data");
         System.out.println("Menu 2: show audience list");
@@ -22,11 +22,15 @@ public class CinemaaWithScanner12 {
         if(menu == 1) {
         System.out.print("Enter a name: " );
         name = input12.nextLine();
-        System.out.print("Enter row number: ");
+        System.out.print("Enter row number (1-4): ");
         row = input12.nextInt();
-        System.out.print("Enter column number: ");
+        System.out.print("Enter column number (1-2): ");
         column = input12.nextInt();
         input12.nextLine();
+
+        if (row < 1 || row > 4 || column < 1 || column > 2) {
+          System.out.println("The seat is not available");
+        }
 
         audience[row - 1][column - 1] = name;
         System.out.print("Are there any other audiences to be added? (y/n): ");
@@ -51,11 +55,8 @@ public class CinemaaWithScanner12 {
       } else {
         System.out.println("Invalid menu choice. Please try again!");
       }
-
-
       }
-
-        
-    }}
+    }
+  }
   
 
