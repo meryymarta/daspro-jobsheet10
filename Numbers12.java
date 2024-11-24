@@ -8,7 +8,7 @@ public class Numbers12 {
         myNumbers[2] = new int [1]; 
 
         for(int i = 0; i < myNumbers.length; i++) {
-            System.out.println(Arrays.toString(myNumbers[i])); 
+            System.out.println("Length of row " + (i + 1) + ": " + (myNumbers[i].length)); 
         }
     }   
 }
